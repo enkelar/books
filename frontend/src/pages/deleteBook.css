@@ -1,0 +1,35 @@
+.container {
+  padding: 16px;
+}
+
+.heading {
+  font-size: 24px;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.delete-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid rgb(30, 21, 70) 21, 70) 21, 70) 21, 70) 21, 70)
+  border-radius: 12px;
+  width: 600px;
+  padding: 8px;
+  margin: 0 auto;
+}
+
+.confirmation-message {
+  font-size: 20px;
+  margin: 16px 0;
+}
+
+.delete-button {
+  background-color: #931515;
+  color: #ffffff;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}

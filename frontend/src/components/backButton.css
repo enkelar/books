@@ -1,0 +1,21 @@
+.flex {
+  display: flex;
+}
+
+.back-button {
+  background-color: rgb(30, 21, 70);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.back-button:hover {
+  background-color: #2c3e50;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}

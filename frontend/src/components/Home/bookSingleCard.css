@@ -1,0 +1,71 @@
+.book-card {
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  position: relative;
+  transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.book-icon {
+  color: rgb(67, 9, 80);
+  font-size: 21px;
+}
+
+.book-info h2 {
+  margin: 0;
+  font-size: 14px;
+}
+
+.book-details {
+  margin: 0.25rem 0;
+  font-size: 12px;
+}
+
+.book-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  margin-top: 16px;
+}
+
+.action-icon {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.action-icon:hover {
+  color: #000;
+}
+
+.show-icon {
+  color: #1a4d80;
+}
+
+.info-icon {
+  color: #2f855a;
+}
+
+.edit-icon {
+  color: #d97706;
+}
+
+.delete-icon {
+  color: #c53030;
+}
