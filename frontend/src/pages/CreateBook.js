@@ -34,6 +34,7 @@ const CreateBooks = () => {
       .post("http://localhost:8080/books", data)
       .then(() => {
         enqueueSnackbar("Book Created successfully", { variant: "success" });
+        console.log('Book created succesfully')
         navigate("/");
       })
       .catch((error) => {

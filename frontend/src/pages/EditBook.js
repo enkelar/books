@@ -49,6 +49,7 @@ const EditBook = () => {
       .put(`http://localhost:8080/books/${id}`, data)
       .then(() => {
         enqueueSnackbar("Book Edited successfully", { variant: "success" });
+        console.log('Book edited succesfully')
         navigate("/");
       })
       .catch((error) => {

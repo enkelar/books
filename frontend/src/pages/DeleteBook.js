@@ -1,5 +1,3 @@
-// DeleteBook.js
-import React, { useState } from "react";
 import BackButton from "../components/BackButton";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
@@ -16,6 +14,7 @@ const DeleteBook = () => {
       .delete(`http://localhost:8080/books/${id}`)
       .then(() => {
         enqueueSnackbar("Book Deleted successfully", { variant: "success" });
+        console.log('Book deleted succesfully')
         navigate("/");
       })
       .catch((error) => {

@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
+import { SnackbarProvider } from "notistack";
 import Home from "./pages/Home";
 import CreateBook from "./pages/CreateBook";
 import ShowBook from "./pages/ShowBook";
@@ -12,7 +13,8 @@ const App = () => {
   const user = localStorage.getItem("token");
 
   return (
-    <Routes>
+    <SnackbarProvider maxSnack={3} anchorOrigin={{ vertical: 'top', horizontal: 'right' }}>
+      <Routes>
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
       {user ? (
@@ -27,6 +29,8 @@ const App = () => {
         <Route path="/" element={<Navigate replace to="/login" />} />
       )}
     </Routes>
+    </SnackbarProvider>
+    
   );
 };
 
